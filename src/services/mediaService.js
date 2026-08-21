@@ -1,4 +1,4 @@
-const MEDIA_API_URL = "http://localhost:8083/api/media"; // Port 8083 (Media Service)
+const MEDIA_API_URL = "http://localhost:8083/api/media";
 
 export const uploadMedia = async (file) => {
   const formData = new FormData();
@@ -14,7 +14,7 @@ export const uploadMedia = async (file) => {
   }
 
   const data = await res.json();
-  return `http://localhost:8083${data.fileUrl}`;
+  return data.fileUrl; // GCP Bucket URL එක සෘජුවම return කරයි
 };
 
 export const getMediaById = async (id) => {
@@ -24,6 +24,7 @@ export const getMediaById = async (id) => {
   }
   return await res.json();
 };
+
 
 export const mediaService = {
   upload: uploadMedia,
