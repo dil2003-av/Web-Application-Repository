@@ -5,6 +5,7 @@
 - **Student Name:** Amarathunga Veedagamage Dilmi Kaushalya
 - **Student Number:** 241722010
 - **GCP Project ID:** project-fb5ef45c-cd3d-4991-92d
+- **Slack Handle:** dilmi kaushalya
 - **Public Deployed URL:** https://project-fb5ef45c-cd3d-4991-92d-b8cc6.web.app/
 
 ------------------------------------------------------------------------
