@@ -1,4 +1,8 @@
-const MEDIA_API_URL = "http://localhost:8083/api/media";
+// GCP Load Balancer Base URL (HTTPS)
+const GCP_LOAD_BALANCER_URL = "https://34.54.64.26";
+
+// API Gateway routed Media Endpoint
+const MEDIA_API_URL = `${GCP_LOAD_BALANCER_URL}/api/media`;
 
 export const uploadMedia = async (file) => {
   const formData = new FormData();
@@ -24,7 +28,6 @@ export const getMediaById = async (id) => {
   }
   return await res.json();
 };
-
 
 export const mediaService = {
   upload: uploadMedia,

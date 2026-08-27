@@ -1,6 +1,10 @@
-// Base URLs for Different Microservices
-export const USER_SERVICE_URL = "http://localhost:8081/api";
-export const CATALOG_SERVICE_URL = "http://localhost:8082/api";
+// GCP Load Balancer Base URL (HTTPS)
+// GCP Load Balancer Base URL (HTTPS)
+const GCP_LOAD_BALANCER_URL = "https://34.54.64.26";
+
+// Base URLs routed via API Gateway
+export const USER_SERVICE_URL = `${GCP_LOAD_BALANCER_URL}/api`;
+export const CATALOG_SERVICE_URL = `${GCP_LOAD_BALANCER_URL}/api`;
 
 export const httpClient = {
   get: async (url, baseUrl = USER_SERVICE_URL) => {
