@@ -1,5 +1,5 @@
 // GCP Load Balancer Base URL (HTTPS)
-const GCP_LOAD_BALANCER_URL = "https://34.54.64.26";
+const GCP_LOAD_BALANCER_URL = "http://136.85.120.43:8083";
 
 // API Gateway routed Media Endpoint
 const MEDIA_API_URL = `${GCP_LOAD_BALANCER_URL}/api/media`;

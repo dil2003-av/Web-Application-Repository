@@ -1,8 +1,6 @@
-// GCP Load Balancer Base URL (HTTPS)
-const GCP_LOAD_BALANCER_URL = "https://34.54.64.26";
 
 // API Gateway routed Requests Endpoint
-const REQUEST_API_URL = `${GCP_LOAD_BALANCER_URL}/api/requests`;
+const REQUEST_API_URL ="http://136.85.120.43:8081/api/requests";
 
 export const getRequests = async () => {
   const res = await fetch(REQUEST_API_URL);
